@@ -87,11 +87,11 @@
   <h3>Drop table space</h3>
   <pre>
     <code>
-      DROP TABLESPACE MTK_SYSTEM_TBS
+      DROP TABLESPACE A_SYSTEM_TBS
       INCLUDING CONTENTS
       CASCADE CONSTRAINTS;
       OR
-      Drop tablespace MTK_SYSTEM_TBS including contents and datafiles; [It'll also delete the allocated physical file]
+      Drop tablespace A_SYSTEM_TBS including contents and datafiles; [It'll also delete the allocated physical file]
     </code>
   </pre>
   
@@ -110,7 +110,7 @@
   <h3>Drop Schema</h3>
   <pre>
     <code>
-      DROP USER mtaka CASCADE;
+      DROP USER A CASCADE;
     </code>
   </pre>
   
@@ -126,14 +126,14 @@
   <h3>Switching to different Schema</h3>
   <pre>
     <code>
-      ALTER SESSION SET CURRENT_SCHEMA = mtaka;
+      ALTER SESSION SET CURRENT_SCHEMA = A;
     </code>
   </pre>
   
   <h3>Give all privileges to a user</h3>
   <pre>
     <code>
-      grant all privileges to mtaka identified by mtaka;
+      grant all privileges to A identified by password;
     </code>
   </pre>
   
