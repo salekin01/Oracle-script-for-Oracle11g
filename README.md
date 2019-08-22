@@ -137,3 +137,31 @@
     </code>
   </pre>
   
+  <h3>Create table</h3>
+  <pre>
+    <code>
+      create table test
+      (
+      	testid number(10) not null,
+   	testnm varchar2(50) null
+      );
+    </code>
+  </pre>
+  
+  <h3>Drop table</h3>
+  <pre>
+    <code>
+      drop table test;
+    </code>
+  </pre>
+  
+  <h3>Find Out Both Default Tablespaces (Permanent and Temporary)</h3>
+  <pre>
+    <code>
+      SELECT PROPERTY_NAME, PROPERTY_VALUE
+      FROM DATABASE_PROPERTIES
+      WHERE PROPERTY_NAME IN ('DEFAULT_PERMANENT_TABLESPACE','DEFAULT_TEMP_TABLESPACE');
+    </code>
+  </pre>
+    
+  
